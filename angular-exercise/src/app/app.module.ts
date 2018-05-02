@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { EventDetailsComponent } from './event/event-details/event-details.component';
 import { EventListComponent } from './event/event-list/event-list.component';
 import { TopMenuComponent } from './nav/top-menu/top-menu.component';
+import {EventListServiceService} from './services/event-list-service.service';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { TopMenuComponent } from './nav/top-menu/top-menu.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [EventListServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
